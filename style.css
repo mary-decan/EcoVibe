@@ -1,17 +1,15 @@
-/* PALETA OFICIAL DE LA PRESENTACIÓN ECOVIBE */
+
 :root {
-    --verde-principal: #0C6150;      /* Verde Esmeralda Oscuro (Logo y encabezados) */
-    --verde-medio: #1E8276;          /* Teal / Verde Azulado (Columnas y botones principales) */
-    --verde-menta: #28B2A1;          /* Turquesa Sostenible (Precios y badges) */
-    --verde-claro: #80C2AF;          /* Menta Suave (Destacados y hover) */
-    --verde-brillante: #38E2CB;      /* Aqua / Ciano ecológico */
-    
-    --fundo-crema: #F4F8F5;          /* Fondo suave orgánico de la presentación */
-    --fundo-blanco: #FFFFFF;         /* Blanco puro para tarjetas */
-    --fundo-cinza: #EAEFEB;          /* Gris verdoso claro para contenedores de imagen */
-    
-    --texto-oscuro: #1C2826;         /* Texto principal antracita */
-    --texto-suave: #536360;          /* Texto secundario */
+    --verde-principal: #0C6150;      
+    --verde-medio: #1E8276;          
+    --verde-menta: #28B2A1;          
+    --verde-claro: #80C2AF;         
+    --verde-brillante: #38E2CB;      
+    --fundo-crema: #F4F8F5;         
+    --fundo-blanco: #FFFFFF;         
+    --fundo-cinza: #EAEFEB;          
+    --texto-oscuro: #1C2826;        
+    --texto-suave: #536360;          
 }
 
 * {
@@ -27,7 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Barra Superior */
 .top-bar {
     background-color: var(--verde-principal);
     color: var(--fundo-blanco);
@@ -37,7 +34,6 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -106,7 +102,6 @@ body {
     font-weight: bold;
 }
 
-/* Hero Shop */
 .hero-shop {
     height: 70vh;
     background: linear-gradient(rgba(12, 97, 80, 0.65), rgba(12, 97, 80, 0.75)), url('https://images.unsplash.com/photo-1523381210434-271e8be1f25b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
@@ -166,7 +161,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Métricas de Impacto */
 .eco-metrics {
     display: flex;
     justify-content: space-around;
@@ -198,7 +192,7 @@ body {
     color: var(--texto-suave);
 }
 
-/* Catálogo de Productos */
+
 .catalog-section {
     padding: 60px 6%;
 }
@@ -218,7 +212,7 @@ body {
     font-size: 16px;
 }
 
-/* Pestañas de Filtros */
+
 .filter-tabs {
     display: flex;
     justify-content: center;
