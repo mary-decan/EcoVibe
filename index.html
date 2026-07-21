@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVibe | Loja de Moda Sustentável</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-bar">
+      <span
+        >🌿 Envios sustentáveis em embalagens 100% biodegradáveis | 10% de
+        desconto na primeira compra com o código <b>ECOVIBE10</b></span
+      >
+    </div>
+
+    <header class="navbar">
+      <div class="logo">Eco<span>Vibe</span></div>
+
+      <nav class="nav-links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sostenibilidade">Sustentabilidade</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#nos">Sobre Nós</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" title="Pesquisar">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="icon-btn cart-btn" id="open-cart-btn" title="Carrinho">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero-shop">
+      <div class="hero-overlay">
+        <span class="tag-brand">Criado por Mariangel S. & Liliana L.</span>
+        <h1>
+          Moda Urbana que <br /><span class="highlight"
+            >Transforma o Planeta</span
+          >
+        </h1>
+        <p>
+          Roupas feitas com algodão orgânico e poliéster de garrafas PET
+          recicladas. 100% rastreáveis e com impacto positivo.
+        </p>
+        <a href="#catalogo" class="btn-shop">Explorar Coleção</a>
+      </div>
+    </section>
+
+    <section class="eco-metrics">
+      <div class="metric-item">
+        <i class="fas fa-wine-bottle"></i>
+        <div>
+          <h4>+50.000</h4>
+          <p>Garrafas PET Recicladas</p>
+        </div>
+      </div>
+      <div class="metric-item">
+        <i class="fas fa-tint-slash"></i>
+        <div>
+          <h4>-90%</h4>
+          <p>Consumo de Água</p>
+        </div>
+      </div>
+      <div class="metric-item">
+        <i class="fas fa-qrcode"></i>
+        <div>
+          <h4>100%</h4>
+          <p>Origem Rastreável</p>
+        </div>
+      </div>
+      <div class="metric-item">
+        <i class="fas fa-box-open"></i>
+        <div>
+          <h4>Zero Waste</h4>
+          <p>Embalagem Biodegradável</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalog-section">
+      <div class="section-header">
+        <h2>A Nossa Coleção Sustentável</h2>
+        <p>Estilo consciente para a nova geração</p>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="tshirts">T-shirts</button>
+        <button class="filter-btn" data-filter="sweatshirts">
+          Sweatshirts
+        </button>
+        <button class="filter-btn" data-filter="calcas">Calças</button>
+        <button class="filter-btn" data-filter="acessorios">
+          Acessórios Eco
+        </button>
+      </div>
+
+      <div class="products-grid" id="products-container"></div>
+    </section>
+
+    <section id="sostenibilidade" class="circular-banner">
+      <div class="circular-content">
+        <span class="sub-tag"
+          ><i class="fas fa-sync-alt"></i> Economia Circular</span
+        >
+        <h2>Devolve as tuas roupas antigas e recebe créditos</h2>
+        <p>
+          Na EcoVibe acreditamos num ciclo sem fim. Quando a tua peça cumprir o
+          seu ciclo, devolve-a para ser reciclada novamente e recebe
+          <b>20% de desconto</b> na tua próxima compra.
+        </p>
+        <button class="btn-secondary">
+          Saber Mais sobre Logística Reversa
+        </button>
+      </div>
+    </section>
+
+    <div class="cart-drawer-overlay" id="cart-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> O Teu Carrinho EcoVibe</h3>
+        <button class="close-cart-btn" id="close-cart-btn">&times;</button>
+      </div>
+
+      <div class="cart-items" id="cart-items-container">
+        <p class="empty-cart-msg">
+          O teu carrinho está vazio. Começa a adicionar moda consciente!
+        </p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary-line">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal">€ 0,00</span>
+        </div>
+        <div class="cart-summary-line eco-savings">
+          <span>Impacto ambiental:</span>
+          <span id="cart-eco-impact">0 garrafas PET salvas</span>
+        </div>
+        <button class="checkout-btn" id="checkout-btn" disabled>
+          Finalizar Compra Sustentável
+        </button>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo light">Eco<span>Vibe</span></div>
+          <p>
+            Roupas sustentáveis criadas com propósito para transformar o consumo
+            urbano.
+          </p>
+          <small>Fundadoras: Mariangel S. & Liliana L.</small>
+        </div>
+        <div class="footer-col">
+          <h4>Coleção</h4>
+          <a href="#catalogo">T-shirts Orgânicas</a>
+          <a href="#catalogo">Sweatshirts PET</a>
+          <a href="#catalogo">Calças Recicladas</a>
+          <a href="#catalogo">Ecobags e Bonés</a>
+        </div>
+        <div class="footer-col">
+          <h4>Apoio ao Cliente</h4>
+          <a href="#">Rastrear Encomenda (QR Code)</a>
+          <a href="#">Programa de Reciclagem</a>
+          <a href="#">Guia de Tamanhos e Materiais</a>
+          <a href="#">Suporte via WhatsApp</a>
+        </div>
+        <div class="footer-col">
+          <h4>Comunidade EcoVibe</h4>
+          <p>Recebe lançamentos exclusivos e notícias de impacto positivo.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="O teu e-mail" />
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 EcoVibe - Moda Sustentável. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

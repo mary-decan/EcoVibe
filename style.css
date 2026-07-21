@@ -1,0 +1,439 @@
+/* PALETA OFICIAL DE LA PRESENTACIÓN ECOVIBE */
+:root {
+    --verde-principal: #0C6150;      /* Verde Esmeralda Oscuro (Logo y encabezados) */
+    --verde-medio: #1E8276;          /* Teal / Verde Azulado (Columnas y botones principales) */
+    --verde-menta: #28B2A1;          /* Turquesa Sostenible (Precios y badges) */
+    --verde-claro: #80C2AF;          /* Menta Suave (Destacados y hover) */
+    --verde-brillante: #38E2CB;      /* Aqua / Ciano ecológico */
+    
+    --fundo-crema: #F4F8F5;          /* Fondo suave orgánico de la presentación */
+    --fundo-blanco: #FFFFFF;         /* Blanco puro para tarjetas */
+    --fundo-cinza: #EAEFEB;          /* Gris verdoso claro para contenedores de imagen */
+    
+    --texto-oscuro: #1C2826;         /* Texto principal antracita */
+    --texto-suave: #536360;          /* Texto secundario */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--fundo-crema);
+    color: var(--texto-oscuro);
+    overflow-x: hidden;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: var(--verde-principal);
+    color: var(--fundo-blanco);
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background-color: var(--fundo-blanco);
+    box-shadow: 0 2px 15px rgba(12, 97, 80, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--verde-principal);
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--verde-menta);
+}
+
+.nav-links a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--verde-medio);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--texto-oscuro);
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: var(--verde-menta);
+    color: var(--fundo-blanco);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Hero Shop */
+.hero-shop {
+    height: 70vh;
+    background: linear-gradient(rgba(12, 97, 80, 0.65), rgba(12, 97, 80, 0.75)), url('https://images.unsplash.com/photo-1523381210434-271e8be1f25b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--fundo-blanco);
+    padding: 0 20px;
+}
+
+.hero-overlay {
+    max-width: 750px;
+}
+
+.tag-brand {
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-shop h1 {
+    font-size: 50px;
+    margin: 20px 0;
+    line-height: 1.15;
+}
+
+.highlight {
+    color: var(--verde-brillante);
+}
+
+.hero-shop p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.btn-shop {
+    background-color: var(--verde-menta);
+    color: var(--fundo-blanco);
+    padding: 14px 36px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-shop:hover {
+    background-color: var(--verde-medio);
+    transform: translateY(-2px);
+}
+
+/* Métricas de Impacto */
+.eco-metrics {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 6%;
+    background-color: var(--fundo-blanco);
+    border-bottom: 1px solid var(--fundo-cinza);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.metric-item i {
+    font-size: 32px;
+    color: var(--verde-principal);
+}
+
+.metric-item h4 {
+    font-size: 18px;
+    color: var(--texto-oscuro);
+}
+
+.metric-item p {
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+/* Catálogo de Productos */
+.catalog-section {
+    padding: 60px 6%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--verde-principal);
+}
+
+.section-header p {
+    color: var(--texto-suave);
+    font-size: 16px;
+}
+
+/* Pestañas de Filtros */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: var(--fundo-blanco);
+    border: 1px solid var(--verde-claro);
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: var(--texto-oscuro);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--verde-principal);
+    color: var(--fundo-blanco);
+    border-color: var(--verde-principal);
+}
+
+/* Grilla de Productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--fundo-blanco);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(12, 97, 80, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    position: relative;
+    border: 1px solid var(--fundo-cinza);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(12, 97, 80, 0.12);
+}
+
+.product-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--verde-principal);
+    color: var(--fundo-blanco);
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.product-img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--fundo-cinza);
+}
+
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--texto-oscuro);
+}
+
+.product-material {
+    font-size: 12px;
+    color: var(--verde-medio);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.product-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--verde-principal);
+}
+
+.add-cart-btn {
+    background-color: var(--verde-medio);
+    color: var(--fundo-blanco);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-cart-btn:hover {
+    background-color: var(--verde-principal);
+}
+
+/* Banner Economía Circular */
+.circular-banner {
+    background: linear-gradient(135deg, var(--verde-principal) 0%, #07382E 100%);
+    color: var(--fundo-blanco);
+    padding: 70px 8%;
+    border-radius: 24px;
+    margin: 40px 6%;
+    text-align: center;
+}
+
+.circular-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sub-tag {
+    color: var(--verde-brillante);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.circular-banner h2 {
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.circular-banner p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.btn-secondary {
+    background-color: var(--verde-menta);
+    color: var(--fundo-blanco);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--verde-medio);
+}
+
+/* Carrito Lateral (Drawer) */
+.cart-drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 900;
+    display: none;
+}
+
+.cart-drawer-overlay.active {
+    display: block;
+}
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 400px;
+    height: 100%;
+    background: var(--fundo-blanco);
+    z-index: 1000;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.3s ease;
+}
+
+.cart-drawer.open {
+    right: 0;
+}
+
+.cart-header {
+    padding: 20px;
+    background: var(--fundo-crema);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--fundo-cinza);
+}
+
+.cart-header h3 {
+    color: var(--verde-principal);
+}
+
+.close-cart-btn {
+    background: none;
+    border: none;
+    font-size:
